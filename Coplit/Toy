@@ -84,3 +84,28 @@ function fibonacci(n) {
   
   return fib(n); 
 }
+
+03 
+const isSubsetOf = function (base, sample) {
+
+  base.sort((a, b) => a - b);
+  sample.sort((a, b) => a - b);
+ // base, sample 배열을 각각 정렬해서 
+ // 만약에 못찾은 상태에서 더 큰 숫자를 탐색하면 바로 false
+  const findItemInSortedArr = (item, arr, from) => {
+    for (let i = from; i < arr.length; i++) { //from이하로는 다시 탐색할 필요 없음
+      if (item === arr[i]) return i;
+      else if (item < arr[i]) return -1;
+    }
+    return -1;
+  };
+
+  let baseIdx = 0;
+  for (let i = 0; i < sample.length; i++) {
+    baseIdx = findItemInSortedArr(sample[i], base, baseIdx); //baseIdx이하로는 다시 탐색할 필요 없음
+    if (baseIdx === -1){ 
+      return false; //하나라도 불포함인 것을 알아내면 바로 false
+    }
+  }
+  return true;
+};
