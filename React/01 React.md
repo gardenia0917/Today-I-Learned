@@ -1,8 +1,5 @@
 # React
 
-
-
-
 # intro
 ## Achievement Goals
 
