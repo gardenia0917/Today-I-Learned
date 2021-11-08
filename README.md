@@ -8,4 +8,4 @@
 [캡틴판교](https://joshua1988.github.io/)
 
 # TIL 레파지토리 이전!
-[](https://gardenia1109.github.io/)
+[블로그](https://gardenia1109.github.io/)
