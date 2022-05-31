@@ -9,3 +9,4 @@
 
 # TIL 레파지토리 이전!
 [블로그](https://gardenia1109.github.io/)
+[벨로그](https://velog.io/@gardenia1109)
